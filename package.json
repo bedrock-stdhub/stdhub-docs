@@ -1,0 +1,17 @@
+{
+  "name": "stdhub-docs",
+  "version": "0.1.0",
+  "description": "Documentation for bedrock-stdhub users & developers.",
+  "main": "index.js",
+  "author": "Wesley F. Young",
+  "license": "GPL-3.0",
+  "private": true,
+  "devDependencies": {
+    "vitepress": "^1.2.3"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  }
+}
