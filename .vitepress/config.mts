@@ -20,7 +20,16 @@ export default defineConfig({
           { text: 'Home', link: '/' },
         ],
         sidebar: [
-          { text: 'Get Started', link: './get-started' }
+          {
+            text: 'User Manual', items: [
+              { text: 'Get Started', link: './get-started' },
+            ]
+          },
+          {
+            text: 'Development', items: [
+              { text: 'Begin Coding', link: './begin-coding' }
+            ]
+          }
         ],
       }
     },
@@ -32,7 +41,16 @@ export default defineConfig({
           { text: '主页', link: '/zh' },
         ],
         sidebar: [
-          { text: '开始使用', link: './get-started' }
+          {
+            text: '用户手册', items: [
+              { text: '开始使用', link: './get-started' },
+            ]
+          },
+          {
+            text: '开发文档', items: [
+              { text: '上手开发', link: './begin-coding' }
+            ]
+          }
         ],
       }
     }

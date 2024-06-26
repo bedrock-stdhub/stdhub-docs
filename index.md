@@ -11,8 +11,8 @@ hero:
       text: Get Started
       link: ./get-started
     - theme: alt
-      text: GitHub
-      link: "https://github.com/bedrock-stdhub/bedrock-stdhub"
+      text: Begin Coding
+      link: ./begin-coding
 
 features:
   - title: Official support
