@@ -28,7 +28,7 @@
 
 ## StdHub API
 
-模块 `stdhub-plugin-api` 提供了一套可供插件访问文件系统和网络的 API，~~同时也提供了额外的 API 来获取 XUID 质量的服务端级的信息~~（仍在开发中）。API 文档均写在代码注释中，可以通过 IDE 查看，也可以直接阅读源码。
+模块 `stdhub-plugin-api` 提供了一套可供插件访问文件系统和网络的 API，~~同时也提供了额外的 API 来获取 XUID 之类的服务端级的信息~~（仍在开发中）。API 文档均写在代码注释中，可以通过 IDE 查看，也可以直接阅读源码。
 
 另外，也有一个[演示仓库](https://github.com/bedrock-stdhub/stdhub-plugin-demo)展示这些 API 的用法。
 
