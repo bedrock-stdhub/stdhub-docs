@@ -18,6 +18,10 @@ As is instructed in `README.md`, execute `npx stdhub-api init` and answer some q
 
 After initializing, run `npm install` (or similar command of other package managers. Here I strongly recommend `yarn`, which can be installed globally by executing `npm install -g yarn`) and start coding.
 
+::: danger
+**NEVER** modify these files by yourself! You should rely on our helper tool.
+:::
+
 ## StdHub APIs
 
 The package `stdhub-plugin-api` provides a set of APIs for plugin to access filesystem and network. ~~Also, it provides additional APIs to fetch server-level data like XUID~~ (in progress). Documentation of these APIs are written in code comments, so rely on your IDE or directly dive into [source code](https://www.npmjs.com/package/stdhub-plugin-api?activeTab=code) to see the document.
