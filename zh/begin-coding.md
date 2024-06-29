@@ -20,9 +20,7 @@
 
 前往 [stdhub-plugin-template 仓库](https://github.com/bedrock-stdhub/stdhub-plugin-template)。点击绿色的 “**Use this template**” 按钮，创建你自己的仓库。用 Git 将生成的仓库（不是模板仓库！）克隆 (clone) 到本地，并且用任何你喜欢的 JavaScript 集成开发环境 (IDE) 打开（诸如 VSCode, IntelliJ IDEA, neovim）。
 
-根据项目的 `README.md` 所讲，执行 `npx stdhub-api init` 并回答一些问题。
-
-问题之一是你准备使用哪个版本的 `@minecraft/server`。在这里，这个模块的每个小版本都对应了一个 Minecraft 版本，例如 `@minecraft/server` 的版本 `1.11.0` 对应 Minecraft 基岩版的版本 `1.21.0`。完整的版本对应关系见[这个页面](https://learn.microsoft.com/en-us/minecraft/creator/documents/scriptversioning?view=minecraft-bedrock-stable)（很不幸，这个页面已经过时了。我们会尽力让 `stdhub-cli` 中的对应关系保持最新）。我们的工具将会生成随机的资源包/行为包 UUID 并生成 `manifest.json`，因此你不用再花时间写这些既无聊又脆弱的文件。
+根据项目的 `README.md` 所讲，执行 `npx stdhub-api init` 并回答一些问题。随后工具将会生成随机的资源包/行为包 UUID 并生成 `manifest.json`，因此你不用再花时间写这些既无聊又脆弱的文件。
 
 初始化完成后，运行 `npm install`（或其他包管理器的类似命令。这里我强烈推荐 `yarn`，可通过命令 `npm install -g yarn` 全局安装），然后开始开发。
 

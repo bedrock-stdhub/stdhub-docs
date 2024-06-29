@@ -20,9 +20,7 @@ First, be sure that you have installed [Node.js](https://nodejs.org/) environmen
 
 Go to [stdhub-plugin-template repository](https://github.com/bedrock-stdhub/stdhub-plugin-template). Click the green button '**Use this template**' and create your own repository. Clone the generated repository (not the template repository!) with Git, and open the cloned repository with any JavaScript IDE you prefer (e.g. VSCode, IntelliJ IDEA, neovim).
 
-As is instructed in `README.md`, execute `npx stdhub-api init` and answer some questions.
-
-One of its questions is which version of `@minecraft/server` you will use. Here, each minor version of this module corresponds to a Minecraft release. For example, `@minecraft/server` version `1.11.0` version corresponds to _Minecraft: Bedrock Edition_ release `1.21.0`. Please refer to [this page](https://learn.microsoft.com/en-us/minecraft/creator/documents/scriptversioning?view=minecraft-bedrock-stable) for complete version mapping (Unfortunately, this page have been out of date. We will try to keep on in `stdhub-cli`). Our tool will generate random package UUIDs and generate `manifest.json` for you, so you are not going to spend time on writing these boring, fragile files.
+As is instructed in `README.md`, execute `npx stdhub-api init` and answer some questions. Then the tool will generate random package UUIDs and generate `manifest.json` for you, so you are not going to spend time on writing these boring, fragile files.
 
 After initializing, run `npm install` (or similar command of other package managers. Here I strongly recommend `yarn`, which can be installed globally by executing `npm install -g yarn`) and start coding.
 
