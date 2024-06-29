@@ -4,15 +4,9 @@
 
 如果你尚未熟悉 TypeScript 和 Minecraft 脚本 API，考虑阅读由 Microsoft 编写的[这一文章](https://learn.microsoft.com/en-us/minecraft/creator/documents/scriptingintroduction?view=minecraft-bedrock-stable)。但是不要按其中的说明操作，因为我们提供了简化配置开发环境这一流程的工具。
 
-你应当明白，JavaScript 代码离了运行环境（或更准确一些，脚本引擎）就无法工作。所有的现代浏览器都内置了 JavaScript 引擎；你应该也听说过 [Node.js](https://nodejs.org/)，它允许你“在任何地方运行 JavaScript”。Node.js 背后的强大引擎则是 [V8](https://v8.dev/)。
-
-然而，仅靠一个引擎是远远不够的。运行在引擎上的 JavaScript 代码无法脱离它的“沙盒”，也就是说，它没有对文件系统、网络之类的系统级特性的访问权限。你可能会说 Node.js 提供了 `node:fs` 和 `node:http` 之类的 API，但是实际上，这些 API 是由 C 或 C++ 写成的，通过某种方式对 JavaScript 代码开放，已经不属于 V8 引擎的一部分。在浏览器上调用这些 API 是不可能的；很不幸，在 Minecraft 的脚本环境中也不行。你可能还会认为可以在插件中引入 `axios` 之类的 npm 包来帮助你访问网络。然而，所有这些模块最终都依赖于 Node.js 或浏览器 API 来工作，它们在 Minecraft 脚本环境中没有帮助。
-
 ::: warning
-因此，你需要注意，虽然你可以在你的插件中包含 npm 包，但这些包中只有**一部分**能够正常工作。因此，如果你的插件并没有按你所期望的那样工作，请检查你在插件中使用的包是否都正常工作。
+你需要注意，虽然你可以在你的插件中包含 npm 包，但这些包中只有**一部分**能够正常工作。理由在[这里](./dessert.md)。因此，如果你的插件并没有按你所期望的那样工作，请检查你在插件中使用的包是否都正常工作。
 :::
-
-所幸，Minecraft 提供了包装在 `@minecraft/server-net` 模块中的有限 API，给插件以互联网访问。该模块目前是实验性的，这就是为什么用户需要在世界设置中启用测试版 API。这个模块只能发送简单的 HTTP 请求，但这对我们来说已经足够。bedrock-stdhub 启动了一个独立的 HTTP 服务器来监听来自插件的请求，并且根据插件需求来读写文件。简而言之，我们的项目使得运行在脚本环境中的行为包 (behavior pack) 能够打破“沙盒”。
 
 ## 初始化项目
 
