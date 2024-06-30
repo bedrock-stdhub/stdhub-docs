@@ -39,6 +39,12 @@ Sadly, traditional ways to enhance BDS (e.g. [LeviLamina](https://github.com/Lit
 - **Fast update**: Previously, when a new version of _Minecraft: Bedrock Edition_ is released, plugin developers and server maintainers had to wait until framework maintainers adapt their framework to the new release, and during this period, those whose Minecraft copies were automatically updated were not able to play on the server. However, bedrock-stdhub is not version-sensitive and theoretically supports _all_ versions of BDS, so the delay only depends on plugin developers. Generally, players will wait for a shorter time until they are able to play on the server.
 - **Cross-platform**: bedrock-stdhub is cross-platform because of the compatibility of Node.js, while traditionally solutions, which rely on platform-dependent PDB files to patch BDS binaries, is often only available on one platform.
 
+## Ecosystem
+
+Honestly, **ZERO** till now.
+
+We know that what makes a good plugin framework are not only its powerful features, but also its vibrant ecosystem. You are welcome to join us through the link below, or just write your own plugin. We are currently working on our own plugin bundler and a new package registry site.
+
 ## Contact & join us
 
 The QQ group number is [162779544](https://qm.qq.com/cgi-bin/qm/qr?k=jNFTovEpc0WDFtbSbUMrbQ0NyUgDpnCu&jump_from=webapi&authKey=6oBQQeoeB6gA7+AljJK7AV1IUEjkk/HpkvxrBNgAQtpxPtw230h4GQrp56nTw81I). Copy or click to contact us.
