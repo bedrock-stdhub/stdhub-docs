@@ -1,6 +1,6 @@
 # 上手开发
 
-## 开始之前
+## 写在前面
 
 如果你尚未熟悉 TypeScript 和 Minecraft 脚本 API，考虑阅读由 Microsoft 编写的[这一文章](https://learn.microsoft.com/en-us/minecraft/creator/documents/scriptingintroduction?view=minecraft-bedrock-stable)。但是不要按其中的说明操作，因为我们提供了简化配置开发环境这一流程的工具。
 
