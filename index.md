@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Bedrock StdHub"
   text: "Load plugins elegantly"
-  tagline: A completely external 'hub' to load plugins with *unmodified* Bedrock Dedicated Server
+  tagline: Plugin loader for *unmodified* BDS
   actions:
     - theme: brand
       text: Get Started
