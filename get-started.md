@@ -12,27 +12,9 @@ BDS currently supports Windows x64 and Linux x64 platforms. Download a suitable 
 
 ## Prepare the world
 
-If you are going to work on a completely new world, then instead of letting BDS itself generate a world, you should generate a world in Minecraft game, turn on **beta APIs** trigger in 'Experiments' page (as is shown in the picture below), copy the world folder (usually under `C:\Users\YourUserName\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\minecraftWorlds`, sort by date to find the latest created world) to `path/to/bds/worlds` and rename the folder to `Bedrock level` (or whatever you've specified in your `server.properties`).
-![Enable Beta APIs](./assets/get-started.enable-beta-apis.png)
+If you are going to work on a completely new world, please run BDS first to let it generate a world, and then run our application to let it patch `level.dat`.
 
-Or if you already have a world, please **back it up** first, since enabling experimental features may cause unexpected issues. Then copy the world to your Minecraft worlds folder, find it in your Minecraft client, enable beta APIs, and finally copy it back to `path/to/bds/worlds`.
-
-::: details Don't you think the procedure above is a bit too complicated?
-
-Yes, we hate long paths! We attempted to make bedrock-stdhub patch `level.dat` automatically, but we got stuck. See issue [#1](https://github.com/bedrock-stdhub/bedrock-stdhub/issues/1) for details.
-
-:::
-
-Now, the directory structure should be as follows:
-```
-|- bedrock_server[.exe]
-|- bedrock-stdhub-[platform][.exe]
-|- worlds
- |- Bedrock level
-  |- level.dat
-  |- ... other files
-|- ... other files
-```
+Or if you already have a world, our application will just patch its `level.dat` as usual. But please **back it up** first, since enabling experimental features may cause unexpected issues.
 
 ## Install plugins
 

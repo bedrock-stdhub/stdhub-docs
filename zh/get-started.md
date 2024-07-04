@@ -12,27 +12,9 @@ BDS 目前支持 Windows 64 位和 Linux 64 位平台。下载对应平台的 be
 
 ## 准备存档
 
-如果你想在一个全新的存档上开服，那么不要让 BDS 本身生成世界，而是在 Minecraft 游戏中生成一个世界，并在“实验性游戏内容”页面中启用**测试版 API**（如下图），将生成的存档文件夹（通常在 `C:\用户\你的用户名\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\minecraftWorlds` 目录下，可以按日期排序来找到你刚刚创建的世界存档）复制到 `BDS 所在目录/worlds` 目录下，然后将存档文件夹重命名成 `Bedrock level`（或是你在 `server.properties` 中指定的其他值）。
-![Enable Beta APIs](./assets/get-started.enable-beta-apis.png)
+如果你想在一个全新的存档上开服，那么请先运行一次 BDS 以使之生成一个世界，然后再运行我们的应用以使之修补 `level.dat`。
 
-或者，如果你已经有一个存档，请先将其**备份**，因为启用实验性游戏内容可能造成意料之外的问题。然后，将存档文件夹复制到 Minecraft 游戏的世界文件夹下，在 Minecraft 中找到这个世界，启用测试版 API，最后将存档复制回 `BDS 所在目录/worlds`。
-
-::: details 不觉得上面的流程有点太繁琐了吗？
-
-是的，长路径太烦人了！我们试图让 bedrock-stdhub 自动修补 `level.dat`，但现今遇到了困难。细节见 issue [#1](https://github.com/bedrock-stdhub/bedrock-stdhub/issues/1)。
-
-:::
-
-现在，你的目录结构应该如下：
-```
-|- bedrock_server[.exe]
-|- bedrock-stdhub-[平台类型][.exe]
-|- worlds
- |- Bedrock level
-  |- level.dat
-  |- ... 其他文件
-|- ... 其他文件
-```
+或者，如果你已经有一个存档，我们的应用也会照常修补其中的 `level.dat`。但是，请先将其**备份**，因为启用实验性游戏内容可能造成意料之外的问题。
 
 ## 安装插件
 
