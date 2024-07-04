@@ -20,13 +20,13 @@ BDS 目前支持 Windows 64 位和 Linux 64 位平台。下载对应平台的 be
 
 下载插件文件，并将其放在 `plugins` 文件夹下（如果 `plugins` 文件夹不存在，请先创建一个）。
 
-插件以 `mcaddon` 的形式发布。一个 `.mcaddon` 文件实质上是一个具有如下结构的 `.zip` 文件：
+插件是一个个扩展名为 `.stdplugin` 的文件。`stdplugin` 文件实质上是一个具有如下结构的 `zip` 文件：
 ```
-|- foo.mcaddon
- |- foo_bp.mcpack
- |- foo_rp.mcpack
+|- foo.stdplugin
+ |- script.js
+ |- plugin.json
 ```
-其中两个 `mcpack` 都是具有一定结构的 `zip` 文件。bedrock-stdhub 要做的是把 `plugins` 下的插件文件解压到存档目录下并且自动启用它们。
+其中 `script.js` 包含了插件运行的所有逻辑，而 `plugin.json` 包含了插件的元信息（基本信息）。bedrock-stdhub 要做的是把 `plugins` 下的插件文件解压到存档目录下并且自动生成相关的行为包 manifest。
 
 万事俱备，只欠启动。
 

@@ -20,13 +20,13 @@ Or if you already have a world, our application will just patch its `level.dat` 
 
 Download plugin files and put them in `plugins` folder (if the folder does not exist, create one first).
 
-Plugins are distributed in the form of `mcaddon`. A `mcaddon` file is in fact a `zip` file of the following structure:
+Plugins are single files with extension `.stdplugin`. A `stdplugin` file is in fact a `zip` file of the following structure:
 ```
-|- foo.mcaddon
- |- foo_bp.mcpack
- |- foo_rp.mcpack
+|- foo.stdplugin
+ |- script.js
+ |- plugin.json
 ```
-In which two `mcpack`s are both `zip` files of certain structure. What bedrock-stdhub does is to unpack these plugin files to the world folder and automatically enable them.
+In which `script.js` contains all the logic of the plugin and `plugin.json` contains meta information of the plugin. What bedrock-stdhub does is to unpack these plugin files to the world folder and automatically generate behavior pack manifest.
 
 After everything is ready, execute bedrock-stdhub.
 
