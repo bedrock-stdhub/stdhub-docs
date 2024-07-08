@@ -22,6 +22,6 @@ Also remember to modify (or just delete) the original `README.md`. You don't wan
 
 ## StdHub APIs
 
-The package `stdhub-plugin-api` provides a set of APIs for plugin to access filesystem and network, to register custom commands, etc. ~~Also, it provides additional APIs to fetch server-level data like XUID~~ (in progress). Documentation of these APIs are written in code comments, so rely on your IDE or directly dive into [source code](https://www.npmjs.com/package/stdhub-plugin-api?activeTab=code) to see the document.
+The package `stdhub-plugin-api` provides a set of APIs for plugin to access filesystem and network, to register custom commands, etc. Also, it provides additional APIs to fetch server-level data like XUID. Documentation of these APIs are written in code comments, so rely on your IDE or directly dive into [source code](https://www.npmjs.com/package/stdhub-plugin-api?activeTab=code) to see the document.
 
 In addition, there is also a [demo repository](https://github.com/bedrock-stdhub-plugins/demo) that shows usages of these APIs.
