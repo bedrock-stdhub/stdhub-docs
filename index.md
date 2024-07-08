@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: ./get-started
+      link: ./user-manual/get-started
     - theme: alt
       text: Begin Coding
-      link: ./begin-coding
+      link: ./development/begin-coding
 
 features:
   - title: Official support

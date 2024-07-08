@@ -22,13 +22,13 @@ export default defineConfig({
         sidebar: [
           {
             text: 'User Manual', items: [
-              { text: 'Get Started', link: './get-started' },
-              { text: 'Command and Permission', link: './command-and-permission' }
+              { text: 'Get Started', link: '/user-manual/get-started' },
+              { text: 'Command and Permission', link: '/user-manual/command-and-permission' }
             ]
           },
           {
             text: 'Development', items: [
-              { text: 'Begin Coding', link: './begin-coding' }
+              { text: 'Begin Coding', link: '/development/begin-coding' }
             ]
           }
         ],
@@ -44,13 +44,13 @@ export default defineConfig({
         sidebar: [
           {
             text: '用户手册', items: [
-              { text: '开始使用', link: './get-started' },
-              { text: '命令和权限', link: './command-and-permission' }
+              { text: '开始使用', link: '/zh/user-manual/get-started' },
+              { text: '命令和权限', link: '/zh/user-manual/command-and-permission' }
             ]
           },
           {
             text: '开发文档', items: [
-              { text: '上手开发', link: './begin-coding' }
+              { text: '上手开发', link: '/zh/development/begin-coding' }
             ]
           }
         ],

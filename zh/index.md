@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: 开始使用
-      link: ./get-started
+      link: ./user-manual/get-started
     - theme: alt
       text: 上手开发
-      link: ./begin-coding
+      link: ./development/begin-coding
 
 features:
   - title: 官方支持
