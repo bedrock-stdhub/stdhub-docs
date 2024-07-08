@@ -23,6 +23,7 @@ export default defineConfig({
           {
             text: 'User Manual', items: [
               { text: 'Get Started', link: './get-started' },
+              { text: 'Command and Permission', link: './command-and-permission' }
             ]
           },
           {
@@ -44,6 +45,7 @@ export default defineConfig({
           {
             text: '用户手册', items: [
               { text: '开始使用', link: './get-started' },
+              { text: '命令和权限', link: './command-and-permission' }
             ]
           },
           {
